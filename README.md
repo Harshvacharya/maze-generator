@@ -1,26 +1,34 @@
 # Maze Generator
 
-This is a maze generator written in Python using the OpenCV library to visualize the generated maze. The generator uses a recursive backtracking algorithm to create a maze with a specified number of rows and columns.
+This is a Python program that generates mazes using the recursive backtracking algorithm. It provides a visual representation of the generated maze using the OpenCV library.
 
 ## Features
-- Generates a maze of specified dimensions
-- Allows customization of cell and wall widths
-- Visualizes the generated maze using OpenCV
-
-## Getting Started
-To use the maze generator, follow these steps:
-
-1. Ensure you have Python and OpenCV installed on your system.
-2. Copy the provided Python code into a Python file (e.g., `maze_generator.py`).
-3. Run the Python script.
+- Generates mazes of specified dimensions
+- Customizable cell and wall widths
+- Custom starting row and column for the generation
+- Visualization of the generated maze using OpenCV
 
 ## Usage
+To use the maze generator, follow these steps:
+
+1. Create a Python file (e.g., `maze_generator.py`) and copy the provided code into it.
+2. Optionally, create a `main.py` file to run the maze generator.
+3. Run the Python script.
+
+### Example (main.py)
+For making a maze of height=40, width=30, cell width=20, wall width=10 and starting the maze generation at row=2 and column=3 , edit the main.py file to:
 ```python
-# Define maze dimensions
-nx, ny = 30, 30
-# Define starting position
-ix, iy = int(nx / 2), int(ny / 2)
-# Create maze object with specified dimensions and cell/wall widths
-maze = Maze(nx, ny, ix, iy, cell_width=4, wall_width=4)
-# Generate and visualize the maze
-maze.make_maze()
+from maze_generator import *
+
+if __name__ == "__main__":
+    maze = Maze(nx=40, ny=30, ix=2, iy=3, cell_width=20, wall_width=10)
+    Maze.start_time = time.time()
+    maze.make_maze()
+``` 
+## Acknowledgments
+- This maze generator is inspired by the recursive backtracking algorithm.
+- Special thanks to OpenCV for providing visualization tools.
+
+## License
+
+This project is licensed under the MIT License, which allows for unrestricted use, modification, and distribution.
