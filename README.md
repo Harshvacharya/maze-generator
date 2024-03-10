@@ -26,7 +26,8 @@ if __name__ == "__main__":
     maze = Maze(nx=40, ny=30, ix=2, iy=3, cell_width=20, wall_width=10)
     Maze.start_time = time.time()
     maze.make_maze()
-``` 
+```
+Check the `Examples` directory for sample mazes generated of different dimensions.
 ## Acknowledgments
 - This maze generator is inspired by the recursive backtracking algorithm.
 - Special thanks to OpenCV for providing visualization tools.
