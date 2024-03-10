@@ -8,6 +8,12 @@ This is a Python program that generates mazes using the recursive backtracking a
 - Custom starting row and column for the generation
 - Visualization of the generated maze using OpenCV
 
+## Requirements
+
+- Python 3.x
+- NumPy
+- OpenCV (cv2)
+
 ## Usage
 To use the maze generator, follow these steps:
 
