@@ -40,4 +40,4 @@ Check the `Examples` directory for sample mazes generated of different dimension
 
 ## License
 
-This project is licensed under the MIT License, which allows for unrestricted use, modification, and distribution.
+This project is licensed under the [MIT License](LICENSE), allowing unrestricted use, modification, and distribution.
