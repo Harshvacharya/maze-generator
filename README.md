@@ -14,6 +14,8 @@ To use the maze generator, follow these steps:
 1. Create a Python file (e.g., `maze_generator.py`) and copy the provided code into it.
 2. Optionally, create a `main.py` file to run the maze generator.
 3. Run the Python script.
+4. To quit, press `q`.
+5. You can save the maze by pressing `a`. Note that you can also save if the maze generation is incomplete, saving the maze generated till that time.
 
 ### Example (main.py)
 For making a maze of height=40, width=30, cell width=20, wall width=10 and starting the maze generation at row=2 and column=3 , edit the main.py file to:
